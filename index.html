@@ -1,40 +1,107 @@
 <!DOCTYPE html>
-<head>
-    <title>ERRESEIS EL BARRILETE</title>
-    <style>
-        body{
-            font-family: sans-serif;
-        }
+<html>
+    <head>
+        <!-- Imagen decorativa en la cabecera -->
+        <img src="Images/Graphic-Design-Is-My-Passion.webp" alt="momazo">
+        
+        <!-- Configuración del juego de caracteres para soporte de acentos y caracteres especiales -->
+        <meta charset="UTF-8">
+        
+        <!-- Título de la página que aparece en la pestaña del navegador -->
+        <Title>GanoHamburguesas</Title>
+        
+        <!-- Estilos CSS internos para la apariencia de la página -->
+        <style>
+            body{
+                font-family: sans-serif; /* Fuente predeterminada para el texto */
+            }
 
-        .contenedor{
-            background-color: khaki;
-            height: 280vh;
-            margin: 5%;
+            /* Estilos para el contenedor de bienvenida */
+            .texto{
+                background-color: rgb(154, 146, 53);
+                height: 20vh;
+                margin: 5%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+            /* Estilos para la sección de comidas */
+            .comidas{
+                background-color: rgb(214, 212, 189);
+                height: 70vh;
+                margin: 5%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* Estilos para la sección de bebidas */
+            .bebidas{
+                background-color: khaki;
+                height: 50vh;
+                margin: 5%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
     <body>
-        <div class="contenedor">
-            <h1><b>ERRESEIS ME DEBE UN BARRILETE</b></h1>
-            <img src="https://media.tenor.com/nBR_oOC_J0YAAAAM/cat-angry.gif" alt="gatoenojado"
-            height="300" width="300"><br>
-            <p><b>Yo con Barrilete:<br></b></p>
-            <video controls>
-                <source src = "nugget y la tierra cantando.mp4" type = "video/mp4">
-            </video>
-            <b><p>Yo sin barrilete:</p></b>
-            <video controls>
-                <source src="Banana Cat Crying Meme Template _ sound effect.mp4" type = "video/mp4">
-            </video>
-            <b><p>Mientras tanto Juniordc:</p></b>
-            <img src="Juniordc.gif" alt="celestefan">
-            <p><b>Patricia:</b></p>
-            <img src="https://media1.tenor.com/m/noQd500dP3IAAAAd/rukocord.gif" alt="monomorado"
-            height="300" width="300">
+        <!-- Sección de bienvenida con información sobre el restaurante -->
+        <div class="texto">
+            <b>
+                <p>
+                    <big>Bienvenido a ganocomidas, aqui no estafamos como ganoexcel y esta bien rico todo.<br>
+                    Si se apellida larrota tiene un 100% de descuento.</big><br><br>
+                    <del>Si trae un arma tambien.</del>
+                </p>
+            </b>
+        </div>
+        
+        <!-- Sección del menú de comidas -->
+        <div class="comidas">
+            <strong><h1>Menu</h1></strong>
+            <h2>Comidas</h2>
+            <ul>
+                <li>Hamburguesa sencilla
+                    <img src="Images/Hamburguesa_Sencilla.jpg" alt="ham_senc"
+                    width="100" height="80">
+                </li>
+                <li>Hamburguesa con queso
+                    <img src="Images/Hamburguesa_Queso.avif" alt="ham_queso"
+                    width="100" height="80">
+                </li>
+                <li>Hamburguesa doble
+                    <img src="Images/Hamburguesa_Doble.jpg" alt="ham_queso"
+                    width="100" height="80">
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Sección del menú de bebidas -->
+        <div class="bebidas">
+            <h2>Bebidas</h2>
+            <ol>
+                <li>Milo
+                    <img src="Images/Milo.png" alt="milo"
+                    width="80" height="80">
+                </li>
+                <li>Coca Cola
+                    <img src="Images/Coca cola.jpg" alt="coca"
+                    width="80" height="80">
+                </li>
+                <li>Cítrica
+                    <img src="Images/citrica.jpg" alt="citrica"
+                    width="80" height="80">
+                </li>
+            </ol>
         </div>
     </body>
-</head>
+</html>

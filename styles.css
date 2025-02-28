@@ -1,0 +1,206 @@
+/* Definición de variables CSS para colores principales del tema */
+:root {
+    --primary-color: #6c5ce7; /* Color principal para encabezados y secciones clave */
+    --secondary-color: #a29bfe; /* Color secundario para detalles y subtítulos */
+    --background-color: #2d3436; /* Color de fondo general de la página */
+    --text-color: #dfe6e9; /* Color del texto principal */
+    --card-bg: #34495e; /* Color de fondo de las tarjetas o secciones */
+    --accent-color: #00b894; /* Color de acento para resaltar elementos importantes */
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal del CV */
+.contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--card-bg);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado con información del perfil */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px;
+}
+
+/* Sección de perfil en el encabezado */
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Imagen de perfil */
+.perfil-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color);
+    
+}
+
+/* Información del perfil */
+.perfil-info h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    margin-top: 5px;
+    opacity: 0.9;
+    color: var(--secondary-color);
+}
+
+/* Información de contacto */
+.contacto-info {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contacto-info a {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo de GitHub */
+.discord-logo {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+}
+
+.github-logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.twitter-logo {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.steam-logo {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+}
+
+.youtube-logo {
+    width: 25px;
+    height: 22px;
+    position: relative;
+    top: 6px; /* Ajusta este valor según lo que necesites */
+}
+
+
+/* Sección principal del contenido */
+main {
+    padding: 40px;
+}
+
+/* Secciones del contenido */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la educación */
+.proyectos h3 {
+    margin-bottom: 0px;
+    color: var(--secondary-color);
+}
+
+.proyectos p {
+    margin: 10px;
+}
+
+.fecha {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+/* Contenedores de habilidades e idiomas */
+.contenedor-habilidades, .contenedor-idiomas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para habilidades e idiomas */
+.habilidades, .idiomas {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.habilidades-nombre, .idiomas-nombre {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* Barra de progreso para habilidades */
+.barra {
+    height: 10px;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barra-porcentage {
+    height: 100%;
+    background-color: var(--accent-color);
+}
+
+/* Nivel de idiomas */
+.idiomas-nivel {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Media queries para adaptar a pantallas más pequeñas */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .skills-grid, .language-grid {
+        grid-template-columns: 1fr;
+    }
+}

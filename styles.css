@@ -111,6 +111,13 @@ header {
     top: 6px; /* Ajusta este valor según lo que necesites */
 }
 
+.javascript-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
 
 /* Sección principal del contenido */
 main {
@@ -190,6 +197,7 @@ h2 {
 }
 
 /* Media queries para adaptar a pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;

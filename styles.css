@@ -124,6 +124,48 @@ header {
     position: relative;
 }
 
+.css-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
+.mysql-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
+.csharp-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
+.git-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
+.java-logo{
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    position: relative;
+}
+
+.html-logo{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    position: relative;
+}
+
 
 /* Sección principal del contenido */
 main {
